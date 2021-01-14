@@ -49,6 +49,6 @@ Based on the results obtained from the experiments, we make following observatio
 
 <img src="https://cse.unl.edu/~hasan/Pics/CNN-ImageClassification-Results-Comparison.png" width=800, height=400>
 
-See the learning curves of the experiments here:
+See the learning curves of the experiments <a href="https://cse.unl.edu/~hasan/Pics/CNN-ImageClassification-Results.pdf">here</a>.
 
-https://cse.unl.edu/~hasan/Pics/CNN-ImageClassification-Results.pdf
+
