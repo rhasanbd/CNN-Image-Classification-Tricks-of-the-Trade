@@ -36,7 +36,7 @@ We performed following 9 experiments.
 9. Dropout
 
 
-## Key Observation
+## Key Observations
 
 Based on the results obtained from the experiments, we make following observations.
 
@@ -46,7 +46,7 @@ Based on the results obtained from the experiments, we make following observatio
 
 - The effect of data augmentation varies depending on how it is applied. For example, experiment 8 has the worst performance (test accuracy) because of its aggressive data augmentation policy. However, it has nearly 0 overfitting.
 
-- Data augmentation is a very useful regularization technique, but it needs to applied judiciously. In deep CNNs we will find data augmentation to improve generalization performance.
+- Data augmentation is a very useful regularization technique, but it needs to applied judiciously. In **deep CNNs** we will find data augmentation to improve generalization performance significantly.
 
 <img src="https://cse.unl.edu/~hasan/Pics/CNN-ImageClassification-Results-Comparison.png" width=800, height=400>
 
