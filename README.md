@@ -11,7 +11,7 @@ We build a 4-hidden layer CNN model:
 
 ## Regularization
 To reduce **overfitting**, following regularization techniques are used:
-- Weight decay ($l_2$ regularization)
+- Weight decay (l2 regularization)
 - Data augmentation
 - Dropout
 
