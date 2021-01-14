@@ -1,6 +1,6 @@
 # CNN-Image Classification-Tricks of the Trade
 
-In this set of notebooks, we perform a set of experiments to train a simple 4-hidden layer Convolutional Neural Network (CNN) architecture for performing image classification **optimally** on the MNIST Fashion dataset.
+In this series of notebooks, we perform a set of experiments to train a simple 4-hidden layer Convolutional Neural Network (CNN) architecture for performing image classification **optimally** on the MNIST Fashion dataset.
 
 More specifically, we investigate the impact of various regularization techniques. 
 
@@ -11,7 +11,7 @@ We build a 4-hidden layer CNN model:
 
 ## Regularization
 To reduce **overfitting**, following regularization techniques are used:
-- Weight decay (le regularization)
+- Weight decay ($l_2$ regularization)
 - Data augmentation
 - Dropout
 
@@ -23,7 +23,7 @@ Refer to the following notebook to learn how to use Keras' ImageDataGenerator cl
 We use Batch Normalization (BN) to overcome the vanishing gradient problem. In one experiment (experiment no. 2) we don't apply BN to observe whether it degrades the learning.
 
 ## Experiments
-We performed the following 9 experiments.
+We performed following 9 experiments.
 
 1. No Regularization
 2. No Regularization & No BN
@@ -39,13 +39,14 @@ We performed the following 9 experiments.
 ## Key Observation
 
 Based on the results obtained from the experiments, we make following observations.
+
 - The shallow CNN can be trained optimally without Batch Normalization. The ReLU activation and He initiazer are good enough to ensure the flow of healthy loss gradients.
 
-- The best technique to combat overfitting is dropout.
+- The best technique to combat overfitting is dropout (for MNIST Fashion dataset).
 
-- The effect of data augmentation varies depending on how it is applied. For example, experiment 8 has the worst performance (test accuracy) because of aggressive data augmentation policy. However, it has nearly 0 overfitting.
+- The effect of data augmentation varies depending on how it is applied. For example, experiment 8 has the worst performance (test accuracy) because of its aggressive data augmentation policy. However, it has nearly 0 overfitting.
 
-- Data augmentation is a very useful regularization technique, but it needs to applied judiciously. 
+- Data augmentation is a very useful regularization technique, but it needs to applied judiciously. In deep CNNs we will find data augmentation to improve generalization performance.
 
 <img src="https://cse.unl.edu/~hasan/Pics/CNN-ImageClassification-Results-Comparison.png" width=800, height=400>
 
