@@ -1,4 +1,4 @@
 # CNN-Image Classification-Tricks of the Trade
 
 
-<img src="https://cse.unl.edu/~hasan/IrisFlowers.png" width=800, height=400>
+<img src="https://cse.unl.edu/~hasan/Pics/CNN-ImageClassification-Results-Comparison.png" width=800, height=400>
